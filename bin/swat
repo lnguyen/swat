@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require 'swat/base'
+
+case arg = ARGV.shift
+when "server"
+  ::Swat.run!
+else
+  @usage = "Usage: $ swat server"
+  puts arg.nil? ? @usage : "Unrecognized argument: '#{arg}'\n#{@usage}"
+  exit 1
+end
+
+

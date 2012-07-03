@@ -16,6 +16,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'sinatra-base'
   spec.add_dependency 'puma'
+  spec.add_dependency 'haml'
 
   spec.add_development_dependency 'rake'
 
